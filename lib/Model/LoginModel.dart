@@ -1,11 +1,11 @@
-class UniversityModel {
+class LoginModel {
   String? code;
   String? message;
   Data? data;
 
-  UniversityModel({this.code, this.message, this.data});
+  LoginModel({this.code, this.message, this.data});
 
-  UniversityModel.fromJson(Map<String, dynamic> json) {
+  LoginModel.fromJson(Map<String, dynamic> json) {
     code = json['code'];
     message = json['message'];
     data = json['data'] != null ? new Data.fromJson(json['data']) : null;

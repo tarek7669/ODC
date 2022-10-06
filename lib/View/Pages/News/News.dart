@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:top_snackbar_flutter/custom_snack_bar.dart';
+import 'package:top_snackbar_flutter/top_snack_bar.dart';
 import 'package:untitled/ViewModel/Bloc/News/news_cubit.dart';
 // import 'package:share_plus/share_plus.dart';
 import 'package:share/share.dart';
@@ -96,9 +98,12 @@ class News extends StatelessWidget {
                                                 onTap: () {
                                                   Clipboard.setData(
                                                     ClipboardData(text: news.newsModel!.data![index].linkUrl.toString())).then((_) {
-                                                      ScaffoldMessenger.of(context).showSnackBar(
-                                                        SnackBar(content: Text("Link copied successfullly"))
-                                                      );
+                                                    showTopSnackBar(
+                                                        context,
+                                                        CustomSnackBar.info(
+                                                            message: "Copied"
+                                                        )
+                                                    );
                                                     });
 
                                                 },

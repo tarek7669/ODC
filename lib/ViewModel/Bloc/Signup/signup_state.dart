@@ -4,6 +4,17 @@ part of 'signup_cubit.dart';
 abstract class SignupState {}
 
 class SignupInitial extends SignupState {}
-class SignupDroplist extends SignupState {}
 class SignupSuccess extends SignupState {}
-class SignupError extends SignupState {}
+class SignupFail extends SignupState {}
+
+class GetAllUniSuccess extends SignupState {}
+
+class GetAllUniFail extends SignupState {}
+
+class GetAllGradesSuccess extends SignupState {}
+
+class GetAllGradesFail extends SignupState {}
+
+class ChangeHiddenText extends SignupState {}
+
+class ChangeActiveTextField extends SignupState {}

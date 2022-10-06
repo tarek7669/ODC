@@ -234,7 +234,7 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 HomeCardComp("Events", 'assets/icons/event.svg',
-                    context, Events()
+                    context, Notes()
                 ),
                 HomeCardComp("Notes", 'assets/icons/notes.svg',
                     context, Notes()

@@ -1,45 +1,51 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 // import 'package:syncfusion_flutter_calendar/calendar.dart';
-
-class Events extends StatelessWidget {
-  const Events({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text("Events"),
-        centerTitle: true,
-        leading: InkResponse(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.arrow_back_ios, color:Colors.black),
-        ),
-      ),
-      // body: SfCalendar(
-      //   view: CalendarView.month,
-      //   dataSource: MeetingDataSource(_getDataSource()),
-      //   // by default the month appointment display mode set as Indicator, we can
-      //   // change the display mode as appointment using the appointment display
-      //   // mode property
-      //   monthViewSettings: const MonthViewSettings(
-      //       appointmentDisplayMode: MonthAppointmentDisplayMode.appointment),
-      // ),
-    );
-  }
-  // List<Meeting> _getDataSource() {
-  //   final List<Meeting> meetings = <Meeting>[];
-  //   final DateTime today = DateTime.now();
-  //   final DateTime startTime = DateTime(today.year, today.month, today.day, 9);
-  //   final DateTime endTime = startTime.add(const Duration(hours: 2));
-  //   meetings.add(Meeting(
-  //       'Conference', startTime, endTime, const Color(0xFF0F8644), false));
-  //   return meetings;
-  // }
-}
-
+//
+//
+//
+// /// The hove page which hosts the calendar
+// class Events extends StatefulWidget {
+//   /// Creates the home page to display teh calendar widget.
+//   const Events({Key? key}) : super(key: key);
+//
+//   @override
+//   // ignore: library_private_types_in_public_api
+//   _EventsState createState() => _EventsState();
+// }
+//
+// class _EventsState extends State<Events> {
+//   @override
+//   Widget build(BuildContext context) {
+//
+//     return Scaffold(
+//         appBar: AppBar(
+//           leading: IconButton(icon: Icon(Icons.arrow_back_ios_new_outlined),onPressed:
+//               () {
+//             Navigator.pop(context);
+//           },),
+//         ),
+//         body: SfCalendar(
+//           view: CalendarView.month,
+//           dataSource: MeetingDataSource(_getDataSource()),
+//           // by default the month appointment display mode set as Indicator, we can
+//           // change the display mode as appointment using the appointment display
+//           // mode property
+//           monthViewSettings: const MonthViewSettings(
+//               appointmentDisplayMode: MonthAppointmentDisplayMode.appointment),
+//         ));
+//   }
+//
+//   List<Meeting> _getDataSource() {
+//     final List<Meeting> meetings = <Meeting>[];
+//     final DateTime today = DateTime.now();
+//     final DateTime startTime = DateTime(today.year, today.month, today.day, 9);
+//     final DateTime endTime = startTime.add(const Duration(hours: 2));
+//     meetings.add(Meeting(
+//         'Conference', startTime, endTime, Colors.deepOrange, false));
+//     return meetings;
+//   }
+// }
+//
 // /// An object to set the appointment collection data source to calendar, which
 // /// used to map the custom appointment data to the calendar appointment, and
 // /// allows to add, remove or reset the appointment collection.

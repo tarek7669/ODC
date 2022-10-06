@@ -162,7 +162,7 @@ class _MyAppState extends State<MyApp> {
               text: "Home"
             ),
             GButton(
-                icon:CupertinoIcons.news,
+                icon: CupertinoIcons.news,
                 text: "News",
             ),
             GButton(

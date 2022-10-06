@@ -1,7 +1,10 @@
+
+
 import 'package:flutter/material.dart';
 
-Widget Text_Form_Field(String hint, controller){
-  return TextFormField(
+Widget numberField(hint, controller){
+  return TextField(
+    keyboardType: TextInputType.number,
     controller: controller,
     decoration: new InputDecoration(
         hintText: hint,

@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:untitled/ViewModel/Database/SharedPreferences/SharedPreferences.dart';
-import 'Model/UniversityModel.dart';
+import 'Model/LoginModel.dart';
+import 'View/Pages/BottomNavigationBar.dart';
 import 'View/Pages/Home.dart';
 import 'View/Pages/Login.dart';
+import 'View/Pages/Splash.dart';
 import 'View/Pages/Test.dart';
 import 'ViewModel/Database/SharedPreferences/SharedPreferences.dart';
 import 'ViewModel/Database/network/dio_helper.dart';
@@ -47,7 +49,7 @@ void main() async{
     MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: SharedPreference.getToken("token").toString() == null ? Login() : Home()
-      home: Login()
+      home: Splash()
       // home: iss ? Home() : Login(),
     )
   );

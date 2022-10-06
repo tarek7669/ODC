@@ -39,11 +39,13 @@ dependencies:
   flutter_bloc: ^8.1.1
   dio: ^4.0.6
   google_nav_bar: ^5.0.6
-  syncfusion_flutter_calendar: ^20.3.48
+  syncfusion_flutter_calendar:
 #  share_plus: ^4.5.0
   shared_preferences: ^2.0.15
   share: ^2.0.4
   simple_html_css:
+  simple_progress_indicators: ^0.2.0
+  top_snackbar_flutter:
 
 dev_dependencies:
   flutter_test:

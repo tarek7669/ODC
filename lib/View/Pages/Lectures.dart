@@ -32,7 +32,7 @@ class Lectures extends StatelessWidget {
                   ],
                 ),
                 body: Container(
-                  padding: EdgeInsets.fromLTRB(20, 25, 20, 15),
+                  padding: EdgeInsets.fromLTRB(10, 25, 10, 15),
                   child: myCub.lectureModel == null ? Center(child: CircularProgressIndicator(
                     color: Colors.deepOrange,
                   ))

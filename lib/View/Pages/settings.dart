@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'FAQ.dart';
 import 'Login.dart';
+import 'OurPartners.dart';
 import 'Support.dart';
 import 'TermsConditions.dart';
 
@@ -43,9 +44,17 @@ class Settings extends StatelessWidget {
                   trailing: Icon(Icons.arrow_forward_ios_sharp),
                 ),
               ),
-              ListTile(
-                title: Text("Our Partners"),
-                trailing: Icon(Icons.arrow_forward_ios_sharp),
+              InkResponse(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => OurPartners()),
+                  );
+                },
+                child: ListTile(
+                  title: Text("Our Partners"),
+                  trailing: Icon(Icons.arrow_forward_ios_sharp),
+                ),
               ),
               InkResponse(
                 onTap: () {
